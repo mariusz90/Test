@@ -17,7 +17,7 @@ import zagala.mariusz.classes.Samochod;
 import zagala.mariusz.classes.Zakup;
 
 public class DBS {
-	//czesc
+	
 	private static final String DB = "jdbc:sqlite:SalonSamochodowy.db";
 	private static final String DRV = "org.sqlite.JDBC";
 	private static Connection conn; // zmienna do zarzadzania polaczeniem z baza
@@ -144,7 +144,7 @@ public class DBS {
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			
+			e.printStackTrace();
 			return false;
 		}
 
